@@ -303,13 +303,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2067787724, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a, type: 3}
-      propertyPath: lengthInSec
-      value: 0.33
+    - target: {fileID: 786070025, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a, type: 3}
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2067787724, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 333
+    - target: {fileID: 786070025, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.097194664
+      objectReference: {fileID: 0}
+    - target: {fileID: 786070025, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 786070025, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.16981131
       objectReference: {fileID: 0}
     - target: {fileID: 5901476707776705909, guid: 08ba597dbc72b40ba9bb5d6deaf6c30a,
         type: 3}
@@ -431,7 +439,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 0}
+  m_BackGroundColor: {r: 0.253649, g: 0.28808674, b: 0.5660378, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

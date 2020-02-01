@@ -199,8 +199,8 @@ Shader "Unlit/CellShader"
                 float edgeAlpha = lerp( ( edgeNoiseCol1.r + edgeNoiseCol2.r ) * 0.5, 0.5 , 1 -  overlayRate ) + edge.r;
                 
                 edgeAlpha = (edgeAlpha - _EdgeClip > 0 ? 1 : 0 ) * ( edge.r > 0 ? 1 : 0 );
-                //fixed4 edgeColor = lerp( colorDark , colorBright , 1 - edge.r) ;
-                fixed4 edgeColor = colorDark;
+                fixed4 edgeColor = lerp( colorDark , colorBright , 1 - edge.r) ;
+                //fixed4 edgeColor = colorDark;
 
                 // combine main and edge
                 fixed4 finalColor = lerp( mainCol , edgeColor , edgeAlpha);
