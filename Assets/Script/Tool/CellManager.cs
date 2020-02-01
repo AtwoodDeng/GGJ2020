@@ -5,18 +5,45 @@ using UnityEngine;
 public class CellManager : MonoBehaviour
 {
 
-    public CellVisual target;
+    public CellVisual target1;
+    public CellVisual target2;
+    public CellVisual target3;
+    public GUISkin skin;
 
 
     public void OnGUI()
     {
-        if ( GUILayout.Button("Infect") )
+        GUI.skin = skin;
+
+        if ( GUILayout.Button("Jiankang") )
         {
-            target.SetStateTo(CellVisual.CellState.Infected);
+            target3.SetStateTo(target2.m_state);
+            target2.SetStateTo(target1.m_state);
+            target1.SetStateTo(CellVisual.CellState.Jiankang);
         }
-        if (GUILayout.Button("Healthy"))
+        if (GUILayout.Button("Kangti"))
         {
-            target.SetStateTo(CellVisual.CellState.Healthy);
+            target3.SetStateTo(target2.m_state);
+            target2.SetStateTo(target1.m_state);
+            target1.SetStateTo(CellVisual.CellState.Kangti);
+        }
+        if (GUILayout.Button("Bingdu"))
+        {
+            target3.SetStateTo(target2.m_state);
+            target2.SetStateTo(target1.m_state);
+            target1.SetStateTo(CellVisual.CellState.Bingdu);
+        }
+        if (GUILayout.Button("Ganran"))
+        {
+            target3.SetStateTo(target2.m_state);
+            target2.SetStateTo(target1.m_state);
+            target1.SetStateTo(CellVisual.CellState.Ganran);
+        }
+        if (GUILayout.Button("Siwang"))
+        {
+            target3.SetStateTo(target2.m_state);
+            target2.SetStateTo(target1.m_state);
+            target1.SetStateTo(CellVisual.CellState.Siwang);
         }
     }
 }

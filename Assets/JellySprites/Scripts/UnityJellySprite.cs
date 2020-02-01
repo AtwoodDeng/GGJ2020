@@ -76,7 +76,7 @@ public class UnityJellySprite : JellySprite
 			}
 		}
 		
-		if(material == null)
+		// if(material == null)
 		{
             //material = new Material(Shader.Find("Sprites/Default"));
             material = Instantiate(m_spriteMaterial);
